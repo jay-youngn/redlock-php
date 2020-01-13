@@ -1,0 +1,27 @@
+{
+    "name": "ginnerpeace/redlock-php",
+    "homepage": "https://github.com/ginnerpeace/redlock-php",
+    "description": "Redis distributed locks in PHP",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ginnerpeace",
+            "email": "ginnerpeace@live.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ginnerpeace\\RedLock\\": "src/"
+        }
+    },
+    "suggest": {
+        "ext-redis": "Required to use the redis command `eval` (*).",
+        "predis/predis": "Required to use the redis command `eval` (~1.0)."
+    }
+}
